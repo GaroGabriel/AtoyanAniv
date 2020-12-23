@@ -2,12 +2,113 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  position: relative;
+  overflow-x: hidden;
 }
 
-img {
-  height: 100px;
+body {
+  background: #1d1d1d;
+}
+
+.W_container {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 header {
   font-family: ArTarumianMHarvats;
+  background: #1d1d1d;
+  overflow-y: hidden;
+}
+header .W_container .flex_container {
+  display: flex;
+  justify-content: space-between;
+}
+header .W_container .logo {
+  flex-grow: 1;
+}
+header .W_container .logo img {
+  height: 180px;
+  z-index: 1;
+  margin-top: 100px;
+}
+header .W_container .text__first {
+  margin-top: 30px;
+  flex-grow: 2;
+  text-align: end;
+}
+header .W_container .text__first .tire {
+  color: #ffd101;
+  text-transform: uppercase;
+  font-size: 118px;
+}
+header .W_container .text__first .service__profesional {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+}
+header .W_container .text__first .service__profesional .service {
+  text-transform: uppercase;
+  font-size: 60px;
+}
+header .W_container .text__first .service__profesional .profesional {
+  align-self: flex-end;
+  font-size: 90px;
+}
+header .center {
+  text-transform: uppercase;
+  color: #ffd101;
+  font-size: 120px;
+  margin-top: 24px;
+}
+header::before {
+  content: "";
+  height: 250px;
+  width: 150%;
+  background: #ffd101;
+  position: absolute;
+  top: 150px;
+  left: -100px;
+  z-index: 0;
+  transform: rotate(8deg);
+}
+header .tire_header {
+  position: absolute;
+  top: 250px;
+  left: 0;
+  opacity: 0.6;
+}
+
+.services .W_container .services__flex_wrapper {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.services .W_container .services__flex_wrapper .services__flex_inner {
+  width: 33%;
+}
+.services .W_container .services__flex_wrapper .services__flex_inner a {
+  text-decoration: none;
+}
+.services .W_container .services__flex_wrapper .services__flex_inner a .services__flex_item {
+  display: flex;
+  flex-direction: column;
+}
+.services .W_container .services__flex_wrapper .services__flex_inner a .services__flex_item img {
+  margin: 0 auto;
+  height: 150px;
+  position: relative;
+  border: solid #ffd101 6px;
+  border-radius: 100%;
+  background: #ffd101;
+  transition: 0.5s all ease;
+}
+.services .W_container .services__flex_wrapper .services__flex_inner a .services__flex_item img:hover {
+  border: 0px solid #ffd101;
+}
+.services .W_container .services__flex_wrapper .services__flex_inner a .services__flex_item span {
+  text-align: center;
+  color: #ffd101;
 }

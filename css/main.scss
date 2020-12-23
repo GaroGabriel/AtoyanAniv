@@ -1,14 +1,134 @@
+$main_yellow:#ffd101;
+$main_black:#1d1d1d;
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    position: relative;
+    overflow-x: hidden;
 }
-img{
-   height: 100px;
+body{
+    background: $main_black;
+}
+.W_container{
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 header{
     font-family: ArTarumianMHarvats;
+    background: $main_black;
+    overflow-y: hidden;
+
+   
+        .W_container{
+
+                .flex_container{
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .logo{
+                    flex-grow: 1;
+                    img{
+                        height: 180px;
+                        z-index: 1;
+                        margin-top: 100px;
+                    }
+                }
+        .text__first{
+            margin-top: 30px;
+            flex-grow: 2;
+           text-align: end;
+            .tire{
+                color: $main_yellow;
+                text-transform: uppercase;
+                font-size: 118px;
+                
+            }
+            .service__profesional{
+              display: flex;
+              flex-direction: column;
+              width: 100%;
+              align-items: flex-start;
+                .service{
+                    text-transform: uppercase;
+                    font-size: 60px;
+                    
+                }
+                .profesional{
+                    align-self: flex-end;
+                    font-size: 90px;
+                }
+            }
+        }
+
+            
+        }
+        .center{
+            text-transform: uppercase;
+            color: $main_yellow;
+            font-size: 120px;
+            margin-top: 24px;
+        }
+        &::before{
+            content: '';
+            height: 250px;
+            width: 150%;
+            background: $main_yellow;
+            position: absolute;
+            top: 150px;
+            left: -100px;
+            z-index: 0;
+            transform: rotate(8deg)
+        }
+        .tire_header{
+            position: absolute;
+            top: 250px;
+            left: 0;
+            opacity: .6;
+        }
+}
+
+.services{
+    .W_container{
+        .services__flex_wrapper{
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .services__flex_inner{
+                width: 33%;
+               
+                a{
+                    text-decoration: none;
+                    .services__flex_item{
+                        display: flex;
+                        flex-direction: column;
+                        
+
+                        img{
+                            margin: 0 auto;
+                            height: 150px;
+                            position: relative;
+                            border: solid $main_yellow 6px;
+                            border-radius: 100%;
+                            background: $main_yellow;
+                            transition: .5s all ease;
+                        &:hover{
+                            border:0px solid $main_yellow;
+                        }
+                            }
+                        
+                        span{
+                            text-align: center;
+                           color: $main_yellow;
+                        
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
