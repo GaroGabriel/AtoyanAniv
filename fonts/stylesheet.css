@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'ArTarumianMHarvats';
+    src: url('ArTarumianMHarvats.eot');
+    src: url('ArTarumianMHarvats.eot?#iefix') format('embedded-opentype'),
+        url('ArTarumianMHarvats.woff2') format('woff2'),
+        url('ArTarumianMHarvats.woff') format('woff'),
+        url('ArTarumianMHarvats.ttf') format('truetype'),
+        url('ArTarumianMHarvats.svg#ArTarumianMHarvats') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ArTarumianKamar';
+    src: url('ArTarumianKamar.eot');
+    src: url('ArTarumianKamar.eot?#iefix') format('embedded-opentype'),
+        url('ArTarumianKamar.woff2') format('woff2'),
+        url('ArTarumianKamar.woff') format('woff'),
+        url('ArTarumianKamar.ttf') format('truetype'),
+        url('ArTarumianKamar.svg#ArTarumianKamar') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
