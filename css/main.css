@@ -135,3 +135,140 @@ header .tire_header {
 .services .W_container .services__flex_wrapper .services__flex_inner a:hover span {
   text-shadow: 3px 3px 5px black;
 }
+
+footer .W_container .footer_inner {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+footer .W_container .footer_inner .footer__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+footer .W_container .footer_inner .footer__contacts .footer__contacts_header {
+  font-size: 20px;
+  color: #ffd101;
+  font-family: ArTarumianMHarvats;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+}
+footer .W_container .footer_inner .footer__contacts .footer__contacts_header:after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: #ffd101;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+}
+footer .W_container .footer_inner .footer__contacts .footer__contacts_phones {
+  width: 100%;
+  display: flex;
+}
+footer .W_container .footer_inner .footer__contacts .footer__contacts_phones .footer__contacts_phone1 a,
+footer .W_container .footer_inner .footer__contacts .footer__contacts_phones .footer__contacts_phone2 a {
+  color: #ffd101;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 0 10px;
+  position: relative;
+}
+footer .W_container .footer_inner .footer__contacts .footer__contacts_phones .footer__contacts_phone1 a:after,
+footer .W_container .footer_inner .footer__contacts .footer__contacts_phones .footer__contacts_phone2 a:after {
+  content: "";
+  height: 1px;
+  width: 1%;
+  background: #ffd101;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  opacity: 0;
+  transition: 0.4s all ease;
+}
+footer .W_container .footer_inner .footer__contacts .footer__contacts_phones .footer__contacts_phone1 a i,
+footer .W_container .footer_inner .footer__contacts .footer__contacts_phones .footer__contacts_phone2 a i {
+  padding: 20px 10px;
+  font-size: 30px;
+}
+footer .W_container .footer_inner .footer__contacts .footer__contacts_phones .footer__contacts_phone1 a:hover:after,
+footer .W_container .footer_inner .footer__contacts .footer__contacts_phones .footer__contacts_phone2 a:hover:after {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  opacity: 1;
+  width: 90%;
+}
+footer .W_container .footer_inner .footer__contacts .footer__socials {
+  display: flex;
+  justify-content: center;
+}
+footer .W_container .footer_inner .footer__contacts .footer__socials a {
+  font-size: 30px;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: 0.4s all ease;
+}
+footer .W_container .footer_inner .footer__contacts .footer__socials a:hover {
+  color: #ffd101;
+}
+footer .W_container .footer_inner .footer__contacts .footer__socials .facebook {
+  color: #4267b2;
+}
+footer .W_container .footer_inner .footer__contacts .footer__socials .instagram {
+  color: #8a3ab9;
+}
+footer .W_container .footer_inner .footer__contacts .footer__socials .whatsapp {
+  color: #25d366;
+}
+footer .W_container .footer_inner .footer__map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .W_container .footer_inner .footer__map .footer__map_header {
+  font-size: 20px;
+  color: #ffd101;
+  font-family: ArTarumianMHarvats;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 5px;
+}
+footer .W_container .footer_inner .footer__map .footer__map_header:after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: #ffd101;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+}
+footer .W_container .footer_inner .footer__map .footer__map_map {
+  border-radius: 7px;
+  border: solid 3px #ffd101;
+}
+footer .W_container .footer_inner .footer__map .footer__map_map .mapouter {
+  position: relative;
+  text-align: right;
+  height: 142px;
+  width: 319px;
+}
+footer .W_container .footer_inner .footer__map .footer__map_map .mapouter .gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 142px;
+  width: 319px;
+}
+footer .sub__footer {
+  display: flex;
+  justify-content: center;
+  background: #161616;
+}
+footer .sub__footer span {
+  color: #303030;
+  padding: 5px;
+}

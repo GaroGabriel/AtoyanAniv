@@ -149,3 +149,146 @@ header {
         }
     }
 }
+///////////////////////////////////////////////// footer
+footer {
+    .W_container {
+        .footer_inner {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding-bottom: 30px;
+            .footer__contacts {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                .footer__contacts_header {
+                    font-size: 20px;
+                    color: $main_yellow;
+                    font-family: $font_header;
+                    margin-bottom: 20px;
+                    padding-bottom: 5px;
+                    &:after {
+                        content: "";
+                        height: 1px;
+                        width: 100%;
+                        background: $main_yellow;
+                        position: absolute;
+                        bottom: 0px;
+                        left: 0;
+                    }
+                }
+                .footer__contacts_phones {
+                    width: 100%;
+                    display: flex;
+                    .footer__contacts_phone1 a,
+                    .footer__contacts_phone2 a {
+                        color: $main_yellow;
+                        display: flex;
+                        align-items: center;
+                        font-size: 18px;
+                        text-decoration: none;
+                        padding: 0 10px;
+                        position: relative;
+
+                        &:after {
+                            content: "";
+                            height: 1px;
+                            width: 1%;
+                            background: $main_yellow;
+                            position: absolute;
+                            bottom: 15px;
+                            left: 15px;
+                            opacity: 0;
+                            transition: 0.4s all ease;
+                        }
+                        i {
+                            padding: 20px 10px;
+                            font-size: 30px;
+                        }
+
+                        &:hover {
+                            &:after {
+                                position: absolute;
+                                bottom: 15px;
+                                left: 15px;
+                                opacity: 1;
+                                width: 90%;
+                            }
+                        }
+                    }
+                }
+                .footer__socials {
+                    display: flex;
+                    justify-content: center;
+
+                    a {
+                        font-size: 30px;
+                        margin: 0 15px;
+                        text-decoration: none;
+                        transition: 0.4s all ease;
+                        &:hover {
+                            color: $main_yellow;
+                        }
+                    }
+                    .facebook {
+                        color: #4267b2;
+                    }
+                    .instagram {
+                        color: #8a3ab9;
+                    }
+                    .whatsapp {
+                        color: #25d366;
+                    }
+                }
+            }
+            .footer__map {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .footer__map_header {
+                    font-size: 20px;
+                    color: $main_yellow;
+                    font-family: $font_header;
+                    margin-bottom: 20px;
+                    position: relative;
+                    padding-bottom: 5px;
+                    &:after {
+                        content: "";
+                        height: 1px;
+                        width: 100%;
+                        background: $main_yellow;
+                        position: absolute;
+                        bottom: 0px;
+                        left: 0;
+                    }
+                }
+                .footer__map_map {
+                    border-radius: 7px;
+                    border: solid 3px $main_yellow;
+                    .mapouter {
+                        position: relative;
+                        text-align: right;
+                        height: 142px;
+                        width: 319px;
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            height: 142px;
+                            width: 319px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sub__footer {
+        display: flex;
+        justify-content: center;
+        background: rgb(22, 22, 22);
+        span {
+            color: #303030;
+            padding: 5px;
+        }
+    }
+}
