@@ -80,14 +80,30 @@ header .tire_header {
   opacity: 0.6;
 }
 
+.services {
+  background-image: url(../img/hands.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.services .W_container .services_header .header_text {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  padding: 60px 0 0 0;
+  letter-spacing: 1.5px;
+  font-family: ArTarumianMHarvats;
+  color: #ffd101;
+}
 .services .W_container .services__flex_wrapper {
   margin-top: 80px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .services .W_container .services__flex_wrapper .services__flex_inner {
   width: 33%;
+  margin-bottom: 10px;
 }
 .services .W_container .services__flex_wrapper .services__flex_inner a {
   text-decoration: none;
@@ -95,6 +111,7 @@ header .tire_header {
 .services .W_container .services__flex_wrapper .services__flex_inner a .services__flex_item {
   display: flex;
   flex-direction: column;
+  padding: 20px;
 }
 .services .W_container .services__flex_wrapper .services__flex_inner a .services__flex_item img {
   margin: 0 auto;
@@ -103,12 +120,18 @@ header .tire_header {
   border: solid #ffd101 6px;
   border-radius: 100%;
   background: #ffd101;
-  transition: 0.5s all ease;
-}
-.services .W_container .services__flex_wrapper .services__flex_inner a .services__flex_item img:hover {
-  border: 0px solid #ffd101;
+  transition: 0.4s all ease;
 }
 .services .W_container .services__flex_wrapper .services__flex_inner a .services__flex_item span {
+  font-family: ArTarumianKamar;
+  padding: 15px 0;
   text-align: center;
   color: #ffd101;
+}
+.services .W_container .services__flex_wrapper .services__flex_inner a:hover img {
+  border-radius: 8%;
+  transform: rotate(360deg);
+}
+.services .W_container .services__flex_wrapper .services__flex_inner a:hover span {
+  text-shadow: 3px 3px 5px black;
 }

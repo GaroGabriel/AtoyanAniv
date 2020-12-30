@@ -1,130 +1,147 @@
-$main_yellow:#ffd101;
-$main_black:#1d1d1d;
-
-*{
+$main_yellow: #ffd101;
+$main_black: #1d1d1d;
+$font_header: ArTarumianMHarvats;
+$font_text: ArTarumianKamar;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     position: relative;
     overflow-x: hidden;
 }
-body{
+body {
     background: $main_black;
 }
-.W_container{
+.W_container {
     max-width: 1000px;
     margin: 0 auto;
 }
 
-header{
+header {
     font-family: ArTarumianMHarvats;
     background: $main_black;
     overflow-y: hidden;
 
-   
-        .W_container{
-
-                .flex_container{
-                    display: flex;
-                    justify-content: space-between;
-                }
-                .logo{
-                    flex-grow: 1;
-                    img{
-                        height: 180px;
-                        z-index: 1;
-                        margin-top: 100px;
-                    }
-                }
-        .text__first{
+    .W_container {
+        .flex_container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .logo {
+            flex-grow: 1;
+            img {
+                height: 180px;
+                z-index: 1;
+                margin-top: 100px;
+            }
+        }
+        .text__first {
             margin-top: 30px;
             flex-grow: 2;
-           text-align: end;
-            .tire{
+            text-align: end;
+            .tire {
                 color: $main_yellow;
                 text-transform: uppercase;
                 font-size: 118px;
-                
             }
-            .service__profesional{
-              display: flex;
-              flex-direction: column;
-              width: 100%;
-              align-items: flex-start;
-                .service{
+            .service__profesional {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                align-items: flex-start;
+                .service {
                     text-transform: uppercase;
                     font-size: 60px;
-                    
                 }
-                .profesional{
+                .profesional {
                     align-self: flex-end;
                     font-size: 90px;
                 }
             }
         }
-
-            
-        }
-        .center{
-            text-transform: uppercase;
-            color: $main_yellow;
-            font-size: 120px;
-            margin-top: 24px;
-        }
-        &::before{
-            content: '';
-            height: 250px;
-            width: 150%;
-            background: $main_yellow;
-            position: absolute;
-            top: 150px;
-            left: -100px;
-            z-index: 0;
-            transform: rotate(8deg)
-        }
-        .tire_header{
-            position: absolute;
-            top: 250px;
-            left: 0;
-            opacity: .6;
-        }
+    }
+    .center {
+        text-transform: uppercase;
+        color: $main_yellow;
+        font-size: 120px;
+        margin-top: 24px;
+    }
+    &::before {
+        content: "";
+        height: 250px;
+        width: 150%;
+        background: $main_yellow;
+        position: absolute;
+        top: 150px;
+        left: -100px;
+        z-index: 0;
+        transform: rotate(8deg);
+    }
+    .tire_header {
+        position: absolute;
+        top: 250px;
+        left: 0;
+        opacity: 0.6;
+    }
 }
 
-.services{
-    .W_container{
-        .services__flex_wrapper{
+.services {
+    background-image: url(../img/hands.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .W_container {
+        .services_header {
+            .header_text {
+                display: flex;
+                justify-content: center;
+                font-size: 30px;
+                padding: 60px 0 0 0;
+                letter-spacing: 1.5px;
+                font-family: $font_header;
+                color: $main_yellow;
+            }
+        }
+        .services__flex_wrapper {
             margin-top: 80px;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             flex-wrap: wrap;
 
-            .services__flex_inner{
+            .services__flex_inner {
                 width: 33%;
-               
-                a{
+                margin-bottom: 10px;
+                a {
                     text-decoration: none;
-                    .services__flex_item{
+                    .services__flex_item {
                         display: flex;
                         flex-direction: column;
-                        
-
-                        img{
+                        padding: 20px;
+                        img {
                             margin: 0 auto;
                             height: 150px;
                             position: relative;
                             border: solid $main_yellow 6px;
                             border-radius: 100%;
                             background: $main_yellow;
-                            transition: .5s all ease;
-                        &:hover{
-                            border:0px solid $main_yellow;
+                            transition: 0.4s all ease;
                         }
-                            }
-                        
-                        span{
+
+                        span {
+                            font-family: $font_text;
+                            padding: 15px 0;
                             text-align: center;
-                           color: $main_yellow;
-                        
+                            color: $main_yellow;
+                        }
+                    }
+                    &:hover {
+                        img {
+                            // border: 0px solid $main_yellow;
+                            border-radius: 8%;
+                            transform: rotate(360deg);
+                        }
+                        span {
+                            text-shadow: 3px 3px 5px rgb(0, 0, 0);
                         }
                     }
                 }
