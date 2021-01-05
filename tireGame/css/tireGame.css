@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.services {
+  background-image: none;
+  font-family: ArTarumianKamar;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/background.webp);
+  height: 800px;
+}
+.services::after {
+  content: "";
+  background: black;
+  opacity: 0.8;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+}
+.services .W_container .modal .modal_inner {
+  border: 1px solid #ffd101;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 400px;
+  min-width: 400px;
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 10;
+}
+.services .W_container .modal .modal_inner .modal_header {
+  color: #ffd101;
+  text-align: center;
+  padding: 10px 0 20px 0;
+  text-shadow: 1.5px 1.5px 1px #000000;
+}
+.services .W_container .modal .modal_inner .modal_text {
+  color: #ffd101;
+  text-align: center;
+  padding: 10px 0 20px 0;
+  line-height: 18px;
+  text-shadow: 1.5px 1.5px 1px #000000;
+}
+.services .W_container .modal .modal_inner .modal_btn {
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.services .W_container .modal .modal_inner .modal_btn a {
+  color: #1d1d1d;
+  background: #ffd101;
+  padding: 5px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
