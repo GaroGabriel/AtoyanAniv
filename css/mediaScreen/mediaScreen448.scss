@@ -1,0 +1,80 @@
+//////////////////////////////////////////////////////////////////// @media screen 448
+
+@media screen and (max-width: 448px) {
+    header {
+        .W_container {
+            .logo {
+                img {
+                    margin-top: 80px;
+                }
+            }
+            .text__first {
+                .service__profesional {
+                    margin-top: 25px;
+                    .service {
+                        font-size: 25px;
+                    }
+                    .profesional {
+                        font-size: 33px;
+                    }
+                }
+            }
+        }
+        .center {
+            margin-left: 20px;
+            padding-bottom: 22px;
+        }
+        &::before {
+            height: 150px;
+            top: 80px;
+        }
+        .tire_header {
+            top: 160px;
+        }
+    }
+
+    .services {
+        .W_container {
+            .services_header {
+                .header_text {
+                    font-size: 25px;
+                    padding: 35px 0 0 0;
+                }
+            }
+            .services__flex_wrapper {
+                margin-top: 30px;
+
+                .services__flex_inner {
+                    width: 100%;
+                    margin-bottom: 2px;
+                }
+            }
+        }
+    }
+    ///////////////////////////////////////////////// footer
+    footer {
+        .W_container {
+            .footer_inner {
+                padding-bottom: 40px;
+                .footer__contacts {
+                    .footer__contacts_phones {
+                        margin-bottom: 20px;
+                    }
+                    .footer__socials {
+                        margin-bottom: 20px;
+                        padding-bottom: 15px;
+                        &::after {
+                            content: "";
+                            border: dotted 1.6px $main_yellow;
+                            width: 250px;
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,77 @@
+//////////////////////////////////////////////////////////////////// @media screen 400
+
+@media screen and (max-width: 400px) {
+    header {
+        .W_container {
+            .logo {
+                img {
+                    margin-top: 80px;
+                }
+            }
+            .text__first {
+                .tire {
+                    font-size: 35px;
+                }
+                .service__profesional {
+                    margin-top: 40px;
+                    .service {
+                        font-size: 30px;
+                    }
+                    .profesional {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+        .center {
+            margin-left: 20px;
+            padding-bottom: 35px;
+            font-size: 35px;
+        }
+        &::before {
+            height: 150px;
+            top: 70px;
+        }
+        .tire_header {
+            top: 160px;
+        }
+    }
+
+    ///////////////////////////////////////////////// footer
+    footer {
+        .W_container {
+            .footer_inner {
+                padding-top: 30px;
+                padding-bottom: 40px;
+                .footer__contacts {
+                    .footer__contacts_phones {
+                        flex-direction: column;
+                        margin-bottom: 20px;
+                        .footer__contacts_phone1 a,
+                        .footer__contacts_phone2 a {
+                            font-size: 15px;
+                            i {
+                                padding: 20px 10px;
+                                font-size: 30px;
+                            }
+                        }
+                    }
+
+                    .footer__socials {
+                        margin-bottom: 20px;
+                        padding-bottom: 15px;
+                        &::after {
+                            content: "";
+                            border: dotted 1.6px $main_yellow;
+                            width: 250px;
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

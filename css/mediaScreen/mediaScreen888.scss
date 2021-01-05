@@ -1,0 +1,41 @@
+//////////////////////////////////////////////////////////////////// @media screen 888
+@media screen and (max-width: 888px) {
+    header {
+        .W_container {
+            .flex_container {
+            }
+            .logo {
+                img {
+                    height: 140px;
+                }
+            }
+            .text__first {
+                .tire {
+                    font-size: 100px;
+                }
+                .service__profesional {
+                    .service {
+                        font-size: 45px;
+                    }
+                    .profesional {
+                        font-size: 70px;
+                    }
+                }
+            }
+        }
+        .center {
+            font-size: 80px;
+            margin-bottom: 25px;
+        }
+        &::before {
+            content: "";
+            height: 170px;
+        }
+        .tire_header {
+            position: absolute;
+            top: 200px;
+            left: 0;
+            opacity: 0.6;
+        }
+    }
+}

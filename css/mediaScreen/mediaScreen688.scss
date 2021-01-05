@@ -1,0 +1,51 @@
+//////////////////////////////////////////////////////////////////// @media screen 688
+@media screen and (max-width: 688px) {
+    header {
+        .W_container {
+            .logo {
+                img {
+                    height: 120px;
+                }
+            }
+            .text__first {
+                .tire {
+                    font-size: 70px;
+                }
+                .service__profesional {
+                    .service {
+                        font-size: 35px;
+                    }
+                    .profesional {
+                        font-size: 60px;
+                    }
+                }
+            }
+        }
+        .center {
+            font-size: 60px;
+            padding-bottom: 30px;
+        }
+        &::before {
+            content: "";
+            height: 170px;
+            top: 110px;
+            left: -100px;
+        }
+        .tire_header {
+            position: absolute;
+            top: 200px;
+            left: 0;
+            opacity: 0.6;
+        }
+    }
+    .services {
+        .W_container {
+            .services_header {
+                .header_text {
+                    font-size: 25px;
+                    padding: 20px 0 0 0;
+                }
+            }
+        }
+    }
+}

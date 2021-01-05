@@ -1,0 +1,35 @@
+@media screen and (max-width: 688px) {
+  header .W_container .logo img {
+    height: 120px;
+  }
+  header .W_container .text__first .tire {
+    font-size: 70px;
+  }
+  header .W_container .text__first .service__profesional .service {
+    font-size: 35px;
+  }
+  header .W_container .text__first .service__profesional .profesional {
+    font-size: 60px;
+  }
+  header .center {
+    font-size: 60px;
+    padding-bottom: 50px;
+  }
+  header::before {
+    content: "";
+    height: 170px;
+    top: 110px;
+    left: -100px;
+  }
+  header .tire_header {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    opacity: 0.6;
+  }
+
+  .services .W_container .services_header .header_text {
+    font-size: 25px;
+    padding: 20px 0 0 0;
+  }
+}

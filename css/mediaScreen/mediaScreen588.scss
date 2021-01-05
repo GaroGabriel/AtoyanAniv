@@ -1,0 +1,87 @@
+//////////////////////////////////////////////////////////////////// @media screen 688
+
+@media screen and (max-width: 588px) {
+    header {
+        .W_container {
+            .logo {
+                img {
+                    height: 115px;
+                }
+            }
+            .text__first {
+                .tire {
+                    font-size: 50px;
+                }
+                .service__profesional {
+                    margin-top: 25px;
+                    .service {
+                        font-size: 32px;
+                    }
+                    .profesional {
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+        .center {
+            margin-left: 30px;
+            font-size: 45px;
+            padding-bottom: 28px;
+        }
+        &::before {
+            height: 170px;
+            top: 80px;
+        }
+        .tire_header {
+            top: 160px;
+        }
+    }
+
+    .services {
+        .W_container {
+            .services_header {
+                .header_text {
+                    font-size: 25px;
+                    padding: 35px 0 0 0;
+                }
+            }
+            .services__flex_wrapper {
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                .services__flex_inner {
+                    width: 50%;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    ///////////////////////////////////////////////// footer
+    footer {
+        .W_container {
+            .footer_inner {
+                padding-bottom: 40px;
+                .footer__contacts {
+                    .footer__contacts_phones {
+                        margin-bottom: 20px;
+                    }
+                    .footer__socials {
+                        margin-bottom: 20px;
+                        padding-bottom: 15px;
+                        &::after {
+                            content: "";
+                            border: dotted 1.6px $main_yellow;
+                            width: 250px;
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

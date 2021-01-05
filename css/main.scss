@@ -14,7 +14,9 @@ body {
 }
 .W_container {
     max-width: 1000px;
+    min-width: 300px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 header {
@@ -65,6 +67,7 @@ header {
         color: $main_yellow;
         font-size: 120px;
         margin-top: 24px;
+        margin-bottom: 35px;
     }
     &::before {
         content: "";
@@ -133,15 +136,15 @@ header {
                             text-align: center;
                             color: $main_yellow;
                         }
-                    }
-                    &:hover {
-                        img {
-                            // border: 0px solid $main_yellow;
-                            border-radius: 8%;
-                            transform: rotate(360deg);
-                        }
-                        span {
-                            text-shadow: 3px 3px 5px rgb(0, 0, 0);
+                        &:hover {
+                            img {
+                                // border: 0px solid $main_yellow;
+                                border-radius: 8%;
+                                transform: rotate(360deg);
+                            }
+                            span {
+                                text-shadow: 3px 3px 5px rgb(0, 0, 0);
+                            }
                         }
                     }
                 }
@@ -149,6 +152,7 @@ header {
         }
     }
 }
+
 ///////////////////////////////////////////////// footer
 footer {
     .W_container {
@@ -292,3 +296,8 @@ footer {
         }
     }
 }
+@import "mediaScreen/mediaScreen888.scss";
+@import "mediaScreen/mediaScreen688.scss";
+@import "mediaScreen/mediaScreen588.scss";
+@import "mediaScreen/mediaScreen448.scss";
+@import "mediaScreen/mediaScreen400.scss";
