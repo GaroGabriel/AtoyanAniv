@@ -1,142 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+* {
+  overflow: hidden;
+}
+
 body {
   display: flex;
+  height: 100vh;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
   margin: 0 auto;
 }
-
-.services {
+body .services {
   background-image: none;
-  font-family: ArTarumianKamar;
+  flex-basis: 90%;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
-.services::after {
-  content: "";
-  background: black;
-  opacity: 0.8;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: 2;
-  transition: all ease 1s;
-}
-.services .W_container {
-  position: relative;
-}
-.services .W_container .d_none {
-  display: none;
-  z-index: 1;
-}
-.services .W_container .manometr_inner {
-  background-image: url(../img/manometr.png);
-  height: 100vh;
-  width: 160%;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  position: relative;
-}
-.services .W_container .manometr_inner .manometr_arrow {
-  position: absolute;
-  top: 27%;
-  left: 50%;
-  transform: translate(-63%, 0);
-  z-index: 3;
-}
-.services .W_container .manometr_inner .manometr_arrow img {
-  height: 67px;
-}
-.services .W_container .manometr_inner .manometr_arrow_animation {
-  animation: hinge;
-  animation-duration: 3s;
-  display: inline-block;
-  margin: 0 0.5rem;
-  top: 24%;
-  left: 36%;
-}
-.services .W_container .manometr_inner .manometr_btn {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 18;
-}
-.services .W_container .manometr_inner .manometr_btn button {
-  padding: 30px 20px;
-  text-transform: uppercase;
-  font-weight: 800;
-  background: red;
-  color: #fff;
-  border-radius: 100%;
-  border: solid 2px #ffd101;
-  cursor: pointer;
-}
-.services .W_container .manometr_inner .manometr_btn button:active {
-  background: #b30000;
-}
-.services .W_container .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 11;
-  width: 100vh;
-}
-.services .W_container .modal .modal_inner {
-  margin: 0 auto;
-  border-radius: 8px;
-  padding: 20px;
+body .services .W_container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 300px;
-  background-image: url(../img/background.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  z-index: 10;
+  align-items: center;
+  margin-bottom: 50px;
 }
-.services .W_container .modal .modal_inner .modal_header {
-  color: #ffd101;
-  text-align: center;
-  padding: 10px 0 20px 0;
-  text-shadow: 1.5px 1.5px 1px #000000;
+body .services .W_container .manometr {
+  border-radius: 8px;
+  border: solid 1px #6d6d6d;
+  height: 400px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #171717;
+  background: linear-gradient(11deg, #171717 0%, #3e3e3e 60%, #5c696c 100%);
 }
-.services .W_container .modal .modal_inner .modal_text {
-  color: #ffd101;
-  text-align: center;
-  padding: 10px 0 20px 0;
-  line-height: 18px;
-  text-shadow: 1.5px 1.5px 1px #000000;
+body .services .W_container .manometr .manometr_inner {
+  background: url(../img/bg2.jpg);
+  height: 98%;
+  width: 95%;
+  border-radius: 8px;
+  border: solid 2px #3b3b3b;
 }
-.services .W_container .modal .modal_inner .modal_btn {
-  margin: 0 auto;
-  padding: 10px 0;
+body .services .W_container .manometr .manometr_inner .manometr_header {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  overflow: hidden;
+  border-bottom: 1px solid #1d1d1d;
+  border-radius: 25px;
 }
-.services .W_container .modal .modal_inner .modal_btn a {
+body .services .W_container .manometr .manometr_inner .manometr_header .logo {
+  transform: rotate(0deg);
+}
+body .services .W_container .manometr .manometr_inner .manometr_header .logo img {
+  height: 40px;
+}
+body .services .W_container .manometr .manometr_inner .manometr_header .model {
+  font-family: "Anton", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
   color: #1d1d1d;
-  background: #ffd101;
-  padding: 3px 40px;
+}
+body .services .W_container .manometr .manometr_inner .monometr_monitor {
+  margin: 5px;
+  border-radius: 8px;
+  border: 2px solid #524e4a;
+}
+body .services .W_container .manometr .manometr_inner .monometr_monitor .monometr_monitor_inner {
+  height: 99px;
+  background: #7a988e;
+  background: linear-gradient(11deg, #7a988e 0%, #87aea9 60%, #617478 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5px;
+}
+body .services .W_container .manometr .manometr_inner .monometr_monitor .monometr_monitor_inner .headre__sup {
+  display: flex;
+  justify-content: space-between;
+}
+body .services .W_container .manometr .manometr_inner .monometr_monitor .monometr_monitor_inner .headre__sup .battery {
+  overflow: hidden;
+}
+body .services .W_container .manometr .manometr_inner .monometr_monitor .monometr_monitor_inner .headre__sup .them {
+  padding: 0 2px;
+}
+body .services .W_container .manometr .manometr_inner .monometr_monitor .monometr_monitor_inner .main_nums {
+  overflow: hidden;
+  font-family: Digital-7 Mono;
+  font-size: 50px;
+  color: #1d1d1d;
+  margin: 0 auto;
+}
+body .services .W_container .manometr .manometr_inner .monometr_monitor .monometr_monitor_inner .props {
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+}
+body .services .W_container .manometr .manometr_inner .monometr_monitor .monometr_monitor_inner .prop {
+  overflow: hidden;
+}
+body .services .W_container .manometr .manometr_inner .monometr_monitor__buttons .monometr_monitor_options {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0 10px 0;
+  padding: 5px 0;
+}
+body .services .W_container .manometr .manometr_inner .monometr_monitor__buttons .monometr_monitor_options .btn {
+  color: #dad8d8;
+  background: url(../img/btn_back.jpg);
+  height: 30px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 5px;
+  box-shadow: 2px -2px 1px #2b2b2b;
+  border-top: solid 1px #1d1d1d;
+  border-right: solid 1px #1d1d1d;
   cursor: pointer;
-  font-size: 20px;
 }
-
-.after_none::after {
-  content: "";
-  background: black;
-  opacity: 0;
-  height: 0%;
-  width: 0%;
-  position: absolute;
-  z-index: 0;
+body .services .W_container .manometr .manometr_inner .monometr_monitor__buttons .monometr_monitor_options .btn:active {
+  box-shadow: none;
+  border: none;
 }
-
-.footer .sub__footer span {
-  font-size: 14px;
+body footer {
+  flex-basis: 1;
 }

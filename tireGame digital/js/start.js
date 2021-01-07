@@ -1,14 +1,3 @@
-let btn = document.querySelector('.manometr_btn');
-let arrow = document.querySelector('.manometr_arrow');
-
-btn.addEventListener('click', fallArrow);
-
-
-
-function fallArrow() {
-    arrow.classList.toggle('manometr_arrow_animation')
-
-    setTimeout(() => arrow.style.display = 'none', 3000)
-
-
-}
+const main_nums = document.querySelector('.main_nums');
+main_nums.innerHTML = 12345
+console.log(main_nums.innerHTML);
