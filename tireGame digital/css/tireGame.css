@@ -1,11 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
-* {
-  overflow: hidden;
-}
-
 body {
   display: flex;
-  height: 100vh;
+  height: 100%;
   flex-direction: column;
   justify-content: space-between;
   margin: 0 auto;
@@ -23,10 +19,11 @@ body .services .W_container {
   margin-bottom: 50px;
 }
 body .services .W_container .manometr {
+  margin-top: 30px;
   border-radius: 8px;
   border: solid 1px #6d6d6d;
-  height: 400px;
-  width: 200px;
+  height: 500px;
+  width: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,7 +42,7 @@ body .services .W_container .manometr .manometr_inner .manometr_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 10px;
+  padding: 5px 20px;
   overflow: hidden;
   border-bottom: 1px solid #1d1d1d;
   border-radius: 25px;
@@ -54,7 +51,7 @@ body .services .W_container .manometr .manometr_inner .manometr_header .logo {
   transform: rotate(0deg);
 }
 body .services .W_container .manometr .manometr_inner .manometr_header .logo img {
-  height: 40px;
+  height: 50px;
 }
 body .services .W_container .manometr .manometr_inner .manometr_header .model {
   font-family: "Anton", sans-serif;
@@ -67,10 +64,15 @@ body .services .W_container .manometr .manometr_inner .monometr_monitor {
   border-radius: 8px;
   border: 2px solid #524e4a;
 }
+body .services .W_container .manometr .manometr_inner .monometr_monitor .monitor_darkMode {
+  background: #222927 !important;
+  background: linear-gradient(11deg, #222927 0%, #1f3834 60%, #0f5d6f 100%) !important;
+}
 body .services .W_container .manometr .manometr_inner .monometr_monitor .monometr_monitor_inner {
   height: 99px;
   background: #7a988e;
   background: linear-gradient(11deg, #7a988e 0%, #87aea9 60%, #617478 100%);
+  transition: 600ms ease all;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -82,9 +84,17 @@ body .services .W_container .manometr .manometr_inner .monometr_monitor .monomet
 }
 body .services .W_container .manometr .manometr_inner .monometr_monitor .monometr_monitor_inner .headre__sup .battery {
   overflow: hidden;
+  transition: 600ms ease all;
+}
+body .services .W_container .manometr .manometr_inner .monometr_monitor .monometr_monitor_inner .headre__sup .battery .fa-battery-quarter {
+  overflow: hidden;
 }
 body .services .W_container .manometr .manometr_inner .monometr_monitor .monometr_monitor_inner .headre__sup .them {
   padding: 0 2px;
+}
+body .services .W_container .manometr .manometr_inner .monometr_monitor .monometr_monitor_inner .headre__sup .them .fa-lightbulb {
+  color: #1d1d1d;
+  overflow: hidden;
 }
 body .services .W_container .manometr .manometr_inner .monometr_monitor .monometr_monitor_inner .main_nums {
   overflow: hidden;
@@ -121,9 +131,44 @@ body .services .W_container .manometr .manometr_inner .monometr_monitor__buttons
   border-right: solid 1px #1d1d1d;
   cursor: pointer;
 }
+body .services .W_container .manometr .manometr_inner .monometr_monitor__buttons .monometr_monitor_options .btn .fa-cogs,
+body .services .W_container .manometr .manometr_inner .monometr_monitor__buttons .monometr_monitor_options .btn .fa-lightbulb,
+body .services .W_container .manometr .manometr_inner .monometr_monitor__buttons .monometr_monitor_options .btn .fa-undo-alt {
+  overflow: hidden;
+}
 body .services .W_container .manometr .manometr_inner .monometr_monitor__buttons .monometr_monitor_options .btn:active {
   box-shadow: none;
   border: none;
+}
+body .services .W_container .manometr .manometr_inner .monometr_monitor__buttons .start_btn {
+  margin: 30px 0;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+}
+body .services .W_container .manometr .manometr_inner .monometr_monitor__buttons .start_btn i {
+  background: url(../img/btn_back.jpg);
+  padding: 17px;
+  color: #dad8d8;
+  border-radius: 100%;
+  box-shadow: 2px -2px 1px #2b2b2b;
+  border-top: solid 1px #1d1d1d;
+  border-right: solid 1px #1d1d1d;
+  cursor: pointer;
+}
+body .services .W_container .manometr .manometr_inner .monometr_monitor__buttons .start_btn i:active {
+  box-shadow: none;
+  border: none;
+}
+body .light {
+  color: #ffd101 !important;
+}
+body .opacity {
+  opacity: 0;
+}
+body .d-none {
+  opacity: 0;
 }
 body footer {
   flex-basis: 1;

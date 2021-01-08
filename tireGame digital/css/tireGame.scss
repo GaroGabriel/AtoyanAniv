@@ -6,11 +6,10 @@ $font_header: ArTarumianMHarvats;
 $font_text: ArTarumianKamar;
 $font_digital: Digital-7 Mono;
 * {
-    overflow: hidden;
 }
 body {
     display: flex;
-    height: 100vh;
+    height: 100%;
     flex-direction: column;
     justify-content: space-between;
     margin: 0 auto;
@@ -25,10 +24,11 @@ body {
             align-items: center;
             margin-bottom: 50px;
             .manometr {
+                margin-top: 30px;
                 border-radius: 8px;
                 border: solid 1px rgb(109, 109, 109);
-                height: 400px;
-                width: 200px;
+                height: 500px;
+                width: 250px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -52,7 +52,7 @@ body {
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
-                        padding: 5px 10px;
+                        padding: 5px 20px;
                         overflow: hidden;
                         border-bottom: 1px solid $main_black;
                         border-radius: 25px;
@@ -61,7 +61,7 @@ body {
                             transform: rotate(0deg);
 
                             img {
-                                height: 40px;
+                                height: 50px;
                             }
                         }
                         .model {
@@ -75,6 +75,16 @@ body {
                         margin: 5px;
                         border-radius: 8px;
                         border: 2px solid rgb(82, 78, 74);
+
+                        .monitor_darkMode {
+                            background: rgb(34, 41, 39) !important;
+                            background: linear-gradient(
+                                11deg,
+                                rgba(34, 41, 39, 1) 0%,
+                                rgba(31, 56, 52, 1) 60%,
+                                rgba(15, 93, 111, 1) 100%
+                            ) !important;
+                        }
                         .monometr_monitor_inner {
                             height: 99px;
                             background: rgb(122, 152, 142);
@@ -84,6 +94,7 @@ body {
                                 rgba(135, 174, 169, 1) 60%,
                                 rgba(97, 116, 120, 1) 100%
                             );
+                            transition: 600ms ease all;
                             display: flex;
                             flex-direction: column;
                             justify-content: space-around;
@@ -95,9 +106,18 @@ body {
 
                                 .battery {
                                     overflow: hidden;
+                                    transition: 600ms ease all;
+                                    .fa-battery-quarter {
+                                        overflow: hidden;
+                                    }
                                 }
                                 .them {
                                     padding: 0 2px;
+
+                                    .fa-lightbulb {
+                                        color: $main_black;
+                                        overflow: hidden;
+                                    }
                                 }
                             }
                             .main_nums {
@@ -136,6 +156,33 @@ body {
                                 border-top: solid 1px #1d1d1d;
                                 border-right: solid 1px #1d1d1d;
                                 cursor: pointer;
+
+                                .fa-cogs,
+                                .fa-lightbulb,
+                                .fa-undo-alt {
+                                    overflow: hidden;
+                                }
+                                &:active {
+                                    box-shadow: none;
+                                    border: none;
+                                }
+                            }
+                        }
+                        .start_btn {
+                            margin: 30px 0;
+                            padding: 10px 0;
+                            display: flex;
+                            justify-content: center;
+                            font-size: 60px;
+                            i {
+                                background: url(../img/btn_back.jpg);
+                                padding: 17px;
+                                color: rgb(218, 216, 216);
+                                border-radius: 100%;
+                                box-shadow: 2px -2px 1px rgb(43, 43, 43);
+                                border-top: solid 1px #1d1d1d;
+                                border-right: solid 1px #1d1d1d;
+                                cursor: pointer;
                                 &:active {
                                     box-shadow: none;
                                     border: none;
@@ -146,6 +193,15 @@ body {
                 }
             }
         }
+    }
+    .light {
+        color: #ffd101 !important;
+    }
+    .opacity {
+        opacity: 0;
+    }
+    .d-none {
+        opacity: 0;
     }
     footer {
         flex-basis: 1;
