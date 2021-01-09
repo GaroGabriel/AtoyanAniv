@@ -5,7 +5,10 @@ const battary = document.querySelector('.fa-battery-quarter')
 const nums = document.querySelector('.main_nums')
 
 
-them_btn.addEventListener('click', changeThem)
+them_btn.addEventListener('click', () => {
+    changeThem();
+    playBtnSound();
+})
 
 function changeThem() {
 
